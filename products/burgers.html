@@ -1,117 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selecciona tu hamburguesa</title>
+    <title>Arma tu pedido</title>
 </head>
-
 <body>
-    <h1>ARMA TU PEDIDO </h1>
+    <h1>ARMA TU PEDIDO</h1>
 
     <form id="formulario" action="#" method="post">
-        <h2> QUE BURGER VAS A PROBAR HOY? </h2>
-    
-                    <div class="producto">
-                        <input type="checkbox" id="bacon" name="bacon" value="bacon" >
-                        <label for="bacon">
-                            <img src="/img/bacon.jpg" alt="BACON $115" width="200">
-                            <p> BACON $115 </p>
-                        </label>
-                    </div>
-                    <div class="cantidad-container">
-                        <label for="cantidad_bacon">CANTIDAD:</label>
-                        <input type="number" id="cantidad_bacon" name="cantidad_bacon" min="1" value="1">
-                        <br><br>
-                        <button type="submit">AGREGAR A LA ORDEN</button>
+        <fieldset>
+            <legend>Selecciona las hamburguesas y cantidades</legend>
 
-                    </div>
-                
-                    <div class="producto">
-                        <input type="radio" id="cheesse" name="cheesse" value="cheese" >
-                        <label for="cheesse">
-                            <img src="/img/bacon.jpg" alt="cheesse" width="200">
-                            <p> CHEESSE $115 </p>
-                        </label>
-                    </div>
-                    <div class="cantidad-container">
-                        <label for="cantidad">CANTIDAD:</label>
-                        <input type="number" id="cantidad" name="cantidad" min="1" value="1">
-                        <br><br>
-                        <button type="submit">AGREGAR A LA ORDEN</button>
+            <!-- Hamburguesa Bacon -->
+            <img aria-hidden="true" src="/img/bacon.jpg" width="200">
+            <p > Bacon $115 Nivel 1 </p>
+            <p > CARNE DE RES, EXTRA TOCINO CRUJIENTE, QUESO DERRETIDO, PAN BRIOCHE. RECOMENDACIÓN: nivel 2 </p>
+            <label aria-hidden="true" for="cantidad_bacon">Cantidad</label>
+            <input aria-label="Introduce la cantidad de hamburguesa Bacon" type="number" id="cantidad_bacon" name="cantidad_bacon" min="0" value="0">
 
-                    </div>
-                
-                    <div class="producto">
-                        <input type="radio" id="americana" name="americana" value="americana" >
-                        <label for="americana">
-                            <img src="/img/bacon.jpg" alt="americana" width="200">
-                            <p> AMERICANA $115 </p>
-                        </label>
-                    </div>
+            <!-- Hamburguesa Cheese -->
+            <img aria-hidden="true" src="/img/bacon.jpg" width="200">
+            <p > Bacon $115 Nivel 1 </p>
+            <p > CARNE DE RES, EXTRA TOCINO CRUJIENTE, QUESO DERRETIDO, PAN BRIOCHE. RECOMENDACIÓN: nivel 2 </p>
+            <label aria-hidden="true" for="cantidad_bacon">Cantidad</label>
+            <input aria-label="Introduce la cantidad de hamburguesa Bacon" type="number" id="cantidad_bacon" name="cantidad_bacon" min="0" value="">
 
+            <!-- Hamburguesa Cheese -->
+            <img aria-hidden="true" src="/img/bacon.jpg" width="200">
+            <p > Bacon $115 Nivel 1 </p>
+            <p > CARNE DE RES, EXTRA TOCINO CRUJIENTE, QUESO DERRETIDO, PAN BRIOCHE. RECOMENDACIÓN: nivel 2 </p>
+            <label aria-hidden="true" for="cantidad_bacon">Cantidad</label>
+            <input aria-label="Introduce la cantidad de hamburguesa Bacon" type="number" id="cantidad_bacon" name="cantidad_bacon" min="0" value="">
 
-                    <div class="cantidad-container">
-                        <label for="cantidad">CANTIDAD:</label>
-                        <input type="number" id="cantidad" name="cantidad" min="1" value="1">
-                        <br><br>
-                        <button type="submit">AGREGAR A LA ORDEN</button>
-                    </div>
-       
-                    <div class="producto">
-                        <input type="radio" id="oklahoma" name="oklahoma" value="oklahoma" >
-                        <label for="oklahoma">
-                            <img src="/img/bacon.jpg" alt="oklahoma" width="200">
-                            <p> OKLAHOMA $165 </p>
-                        </label>
-                    </div>
+            <!-- Hamburguesa Cheese -->
+            <img aria-hidden="true" src="/img/bacon.jpg" width="200">
+            <p > Bacon $115 Nivel 1 </p>
+            <p > CARNE DE RES, EXTRA TOCINO CRUJIENTE, QUESO DERRETIDO, PAN BRIOCHE. RECOMENDACIÓN: nivel 2 </p>
+            <label aria-hidden="true" for="cantidad_bacon">Cantidad</label>
+            <input aria-label="Introduce la cantidad de hamburguesa Bacon" type="number" id="cantidad_bacon" name="cantidad_bacon" min="0" value="">
 
+            <!-- Hamburguesa Cheese -->
+            <img aria-hidden="true" src="/img/bacon.jpg" width="200">
+            <p > Bacon $115 Nivel 1 </p>
+            <p > CARNE DE RES, EXTRA TOCINO CRUJIENTE, QUESO DERRETIDO, PAN BRIOCHE. RECOMENDACIÓN: nivel 2 </p>
+            <label aria-hidden="true" for="cantidad_bacon">Cantidad</label>
+            <input aria-label="Introduce la cantidad de hamburguesa Bacon" type="number" id="cantidad_bacon" name="cantidad_bacon" min="0" value="">
 
-                    <div class="cantidad-container">
-                        <label for="cantidad">CANTIDAD:</label>
-                        <input type="number" id="cantidad" name="cantidad" min="1" value="1">
-                        <br><br>
-                        <button type="submit">AGREGAR A LA ORDEN</button>
-                    </div>
-                
-                    <div class="producto">
-                        <input type="radio" id="mexicana" name="mexicana" value="mexicana" >
-                        <label for="mexicana">
-                            <img src="/img/bacon.jpg" alt="mexicana" width="200">
-                            <p> MEXICANA $165 </p>
-                        </label>
-                    </div>
+            <!-- Hamburguesa Cheese -->
+            <img aria-hidden="true" src="/img/bacon.jpg" width="200">
+            <p > Bacon $115 Nivel 1 </p>
+            <p > CARNE DE RES, EXTRA TOCINO CRUJIENTE, QUESO DERRETIDO, PAN BRIOCHE. RECOMENDACIÓN: nivel 2 </p>
+            <label aria-hidden="true" for="cantidad_bacon">Cantidad</label>
+            <input aria-label="Introduce la cantidad de hamburguesa Bacon" type="number" id="cantidad_bacon" name="cantidad_bacon" min="0" value="">
 
+            <button type="submit">Agregar todas las hamburguesas seleccionadas</button>
 
-                    <div class="cantidad-container">
-                        <label for="cantidad">CANTIDAD:</label>
-                        <input type="number" id="cantidad" name="cantidad" min="1" value="1">
-                        <br><br>
-                        <button type="submit">AGREGAR A LA ORDEN</button>
-                    </div>
-               
-                    <div class="producto">
-                        <input type="ultracheesse" id="ultracheese" name="ultracheese" value="ultracheese" >
-                        <label for="ultracheesse">
-                            <img src="/img/bacon.jpg" alt="ultracheese" width="200">
-                            <p> ULTRACHEESSE $165 </p>
-                        </label>
-                    </div>
-
-
-                    <div class="cantidad-container">
-                        <label for="cantidad">CANTIDAD:</label>
-                        <input type="number" id="cantidad" name="cantidad" min="1" value="1">
-                        <br><br>
-                        <button type="submit">AGREGAR A LA ORDEN</button>
-                    </div>
-    
-        </table>
+        </fieldset>
     </form>
-
-
-
 </body>
-
 </html>
