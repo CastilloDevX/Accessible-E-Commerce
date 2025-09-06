@@ -6,6 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Le toca a castillo (yop) -->
+    <h1>Datos de la targeta</h1>
+
+    <form action="/order.html">
+        <label for="card-id">Numero de targeta</label>
+        <input type="number" name="card-id" id="card-id">
+
+        <br>
+        <label for="alias">Alias de targeta</label>
+        <input type="text" name="alias" id="alias">
+
+        <br>
+        <label for="expiration-month">Mes de expiracion</label>
+        <input type="number" name="expiration-month" id="expiration-month" min="1" max="12">
+
+        <br>
+        <label for="expiration-year">Año de expiracion</label>
+        <input type="number" name="expiration-year" id="expiration-year">
+
+        <br>
+        <label for="verification-code">Codigo de verificación</label>
+        <input type="number" name="verification-code" id="verification-code" min="100" max="999">
+
+        <br>
+        <input type="submit" value="Agregar metodo de pago">
+        <a href="/order.html">Cancelar metodo de pago</a>
+    </form>
 </body>
 </html>
