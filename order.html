@@ -10,7 +10,10 @@
 <body>
   <h1>Datos de Envio</h1>
 
-  <form action="">
+  <form action="payment.html">
+
+    <fieldset>
+    <legend>Información Personal</legend>
     <label for="nombre">Nombre: </label>
     <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
     <br><br>
@@ -23,6 +26,11 @@
     <label for="telefono">Telefono :</label>
     <input type="number" name="telefono" id="telefono" placeholder="Escribe tu Telefono">
     <br><br>
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+      <legend>Direccion</legend>
     Estado: 
     <select name="" id="">  
       <option value="">Selecciona un estado</option>
@@ -78,6 +86,11 @@
     <label for="InstruccionesAdicionales">Instrucciones Adicionales: </label>
     <input type="text" name="InstruccionesAdicionales" id="InstruccionesAdicionales" placeholder="Ingresa Instrucciones Adicionales">
     <br><br>
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+      <legend>Envio</legend>
     <label for="Envio">Tipo de envio: </label>
     <input type="radio" name="Envio" id="Envio" value="Estándar"> Estándar
     <input type="radio" name="Envio" id="Envio" value="Express"> Express
@@ -85,7 +98,13 @@
     <label for="Terminos"></label>
     <input type="checkbox" name="Terminos" id="Terminos"> <a href="terminos_condiciones.html">Acepto los términos y condiciones</a>
     <br><br>  
+    </fieldset>
+    <br><br>
+
+
     <button type="submit">Aceptar</button>
+
+
   </form>
 </body>
 
