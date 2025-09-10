@@ -23,6 +23,7 @@
             
         }
         .welcome-msj{
+        
             font-family: 'Courier New', Courier, monospace;
             font-size: 20px;
             text-align: center;
@@ -38,6 +39,7 @@
             margin-bottom: 20px;
             border-radius: 50px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            margin-bottom: 50px;
         }
 
         .logo_img {
@@ -79,5 +81,23 @@
             margin-bottom: 50px;
             margin-left: 90px;
             margin-right: 90px;
+        }
+        .form-contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 60px;
+            margin-bottom: 100px;
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+
+        .contact-body{
+            margin-bottom: 30px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+            
         }
    
