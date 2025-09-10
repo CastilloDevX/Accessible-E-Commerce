@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,34 +28,52 @@
   </header>
 
     <h1>Datos de la targeta</h1>
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Método de pago</title>
+</head>
+<body>
+  <header>
+    <h1 id="page-title">Datos de la tarjeta</h1>
+  </header>
+>>>>>>> 9d57d51 (Payment updated with fieldset)
 
-    <form action="/order.html">
-        <label for="card-id">Numero de targeta</label>
-        <input type="number" name="card-id" id="card-id">
+  <main role="main" aria-labelledby="page-title">
+    <form action="/order.html" method="post" role="form" aria-labelledby="form-title">
+      <fieldset>
+        <legend id="form-title">Información de pago</legend>
+
+        <label for="card-id">Número de tarjeta:</label>
+        <input type="number" name="card-id" id="card-id" aria-required="true">
 
         <br>
-        <label for="alias">Alias de targeta</label>
+        <label for="alias">Alias de tarjeta:</label>
         <input type="text" name="alias" id="alias">
 
         <br>
-        <label for="expiration-month">Mes de expiracion</label>
-        <input type="number" name="expiration-month" id="expiration-month" min="1" max="12">
+        <label for="expiration-month">Mes de expiración:</label>
+        <input type="number" name="expiration-month" id="expiration-month" min="1" max="12" aria-required="true">
 
         <br>
-        <label for="expiration-year">Año de expiracion</label>
-        <input type="number" name="expiration-year" id="expiration-year">
+        <label for="expiration-year">Año de expiración:</label>
+        <input type="number" name="expiration-year" id="expiration-year" aria-required="true">
 
         <br>
-        <label for="verification-code">Codigo de verificación</label>
-        <input type="number" name="verification-code" id="verification-code" min="100" max="999">
+        <label for="verification-code">Código de verificación (CVV):</label>
+        <input type="number" name="verification-code" id="verification-code" min="100" max="999" aria-required="true">
 
         <br>
-        <label for="Terminos"></label>
-        <input type="checkbox" name="Terminos" id="Terminos"> <a href="terminos_condiciones.html">Acepto los términos y condiciones</a>
+        <input type="checkbox" name="Terminos" id="Terminos" aria-required="true">
+        <label for="Terminos">
+          Acepto los <a href="terminos_condiciones.html">términos y condiciones</a>
+        </label>
 
         <br>
-        <input type="submit" value="Agregar metodo de pago">
-        <a href="/order.html">Cancelar metodo de pago</a>
+        <input type="submit" value="Agregar método de pago">
+        <a href="/order.html">Cancelar método de pago</a>
+      </fieldset>
     </form>
+  </main>
 </body>
 </html>
