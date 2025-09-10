@@ -1,66 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/css/index.css">
-    
-    <title>K.O. Burguers</title>
-
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <title>K.O. Burguers</title>
 </head>
 <body>
-    <header>
-       
-        <div class = "name" aria-label="nombre de la empresa">K.O. Burguers</div> 
-        <a href="/index.html" class = "logo" aria-label="Logo e inicio">
-            <img src="/img/logo_ko.png" alt="Logo e inicio" class = "logo_img">
-        </a>
-        
 
-        <nav>
-            <ul class="nav_link">
-                
-                <li>
-                    <div class="contact" href="/contact.html" aria-label="link hacia formulario de contacto">Contactanos</div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main >
-        <div class = "welcome-msj" aria-label = "Mensaje de bienvenida">
-       Bienvenido a K.O. Burguers!
-        <br><br>
-        El mejor lugar para disfrutar de las hamburguesas más deliciosas y jugosas de la ciudad. En K.O. Burguers, nos enorgullece ofrecer una experiencia culinaria única que combina ingredientes frescos y sabores unicos.
-        </div>
+     <!-- Navegación -->
+  <header role="banner">
+    <div class="name" aria-label = "Nuestro nombre">K.O. Burguers</div> 
 
-        <div class="invite" aria-label = "invitación a ver el menú">
-            Explora nuestro menú</div>
-
-        <div class="products">
-
-           <a href="/products/burgers.html" class="burgers" alt = "Hamburguesa">
-                <img src="/img/burger.png" alt="Hamburguesa" class = "menu-img" id = "burguers">
-                <!--<br><label for ="burguers" class = "label_menu">Hamburguesas</label>-->
-           </a>
-
-           <a href="/products/sodas.html" class="sodas" alt = "Sodas">
-                <img src="/img/bebidas.png" alt="Sodas" class = "menu-img" id = "sodas">
-               <!--<br><label for ="sodas" class = "label_menu">Sodas</label>-->
-           </a>
-
-           <a href="/products/desserts.html" class="desserts" alt = "Postres">
-                <img src="/img/papas.png" alt="postres" class = "menu-img" id = "desserts">
-                <!--<br><label for ="desserts" class = "label_menu">Papas</label>-->
-           </a>
-        </div>
-
-
-
-
-    </main>
-   
+    <a href="/index.html" class="logo" aria-label="Ir a la página de inicio">
+      <img src="/img/logo_ko.png" alt="" role="presentation" class="logo_img">
+    </a>
     
+    <nav role="navigation" aria-label="">
+      <ul class="nav_link">
+        <li>
+          <a class="contact" href="/contact.html" aria-label="Contáctanos">
+            <span aria-hidden="true">Contáctanos</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+
+
+    <fieldset>
+      <legend>Bienvenida</legend>
+      <p class = "invite">Bienvenido a K.O. Burguers</p>
+      <p class = "invite">
+        El mejor lugar para disfrutar de las hamburguesas más deliciosas y jugosas de la ciudad. 
+        En K.O. Burguers, nos enorgullece ofrecer una experiencia culinaria única que combina ingredientes 
+        frescos y sabores únicos.
+      </p>
+    </fieldset>
+
+   
+    <section class="invite">
+         <div>Explora nuestro menú acontinuación</div> 
+    </section>
+
+    <!-- Menú -->
+    <fieldset>
+      <legend>Menú de productos</legend>
+      <ul class="products">
+        <li>
+          <a href="/products/burgers.html" aria-label="Ver hamburguesas">
+            <img src="/img/burger.png" alt="Ver hamburguesas" role="presentation" class="menu-img">
+           
+          </a>
+        </li>
+
+        <li>
+          <a href="/products/sodas.html" aria-label="Ver bebidas y sodas">
+            <img src="/img/bebidas.png" alt="Ver bebidas y sodas" role="presentation" class="menu-img">
+           
+          </a>
+        </li>
+
+        <li>
+          <a href="/products/desserts.html" aria-label="Ver papas y postres">
+            <img src="/img/papas.png" alt="Ver papas" role="presentation" class="menu-img">
+            
+          </a>
+        </li>
+      </ul>
+    </fieldset>
+
+  </main>
 </body>
 </html>
