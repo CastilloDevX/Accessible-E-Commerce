@@ -8,7 +8,7 @@
         }
         
         .name{
-            font-family: 'Courier New', Courier, monospace;
+            
             text-align: center;
             font-size: 35px;
             color: #3fabe4;
@@ -16,7 +16,7 @@
         }
 
         .invite{
-            font-family: 'Courier New', Courier, monospace;
+            
             text-align: center;
             margin-top: 40px;
             font-size: 20px;
@@ -24,7 +24,7 @@
         }
         .welcome-msj{
         
-            font-family: 'Courier New', Courier, monospace;
+            
             font-size: 20px;
             text-align: center;
         }
