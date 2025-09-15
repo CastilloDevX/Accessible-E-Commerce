@@ -100,4 +100,22 @@
             font-size: 15px;
             
         }
+
+        .botonEnviar{
+
+            display: flex;
+            flex-direction: column;
+            background-color: #000000;
+            color: #3fabe4;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            
+            border-radius: 100px;
+            font-size: 20px;
+            width: 100px;
+            align-items: center;
+           
+          
+        }
    
