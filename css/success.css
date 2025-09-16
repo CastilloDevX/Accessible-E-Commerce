@@ -1,0 +1,46 @@
+/* Estilos del botón para esta página.
+   Usamos .page-success a modo de "ancla" por si tienes reglas globales más fuertes. */
+.page-success a.btn{
+    padding: 10px 16px;
+    background: #00AEEF;
+    color: #ffffff;
+    border: 2px solid #007EA6;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+  
+}
+
+.page-success a.btn:hover {
+  text-decoration: none;
+  filter: brightness(0.98);
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #ffffff;
+  font-style: italic;
+}
+
+.botonX{
+
+  display: flex-inline;
+  justify-content: center;
+  background-color: #000000;
+  color: #3fabe4;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  
+  border-radius: 100px;
+  font-size: 20px;
+  width: 100px;
+  align-items: center;
+  cursor: pointer;
+  
+  
+}
+
+
+
