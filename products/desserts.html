@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <link rel="stylesheet" href="/css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arma tu pedido</title>
 </head>
 <body>
         <!-- Navegación -->
@@ -26,6 +26,41 @@
     </nav>
   </header>
 
-    
+    <h1>ARMA TU PEDIDO</h1>
+
+    <form id="formulario" action="#" method="post">
+        <fieldset>
+            <legend>Selecciona las hamburguesas y cantidades</legend>
+
+            <!-- Papas chicas -->
+            <img aria-hidden="true" src="/img/papas.png" width="200">
+            <p > Papas chicas $25 </p>
+            <label aria-hidden="true" for="cantidad_papaschicas">Cantidad</label>
+            <input aria-label="Introduce la cantidad de papas chicas" type="number" id="cantidad_papaschicas" name="cantidad_papaschicas" min="0" value="">
+
+            <!-- Papas medianas -->
+            <img aria-hidden="true" src="/img/papas.png" width="200">
+            <p > Papas medianas $45 </p>
+            <label aria-hidden="true" for="cantidad_papasmedianas">Cantidad</label>
+            <input aria-label="Introduce la cantidad de papas medianas" type="number" id="cantidad_papasmedianas" name="cantidad_papasmedianas" min="0" value="">
+
+            <!-- Papas grandes -->
+            <img aria-hidden="true" src="/img/papas.png" width="200">
+            <p > papas grandes $65 </p>
+            <label aria-hidden="true" for="cantidad_papasgrandes">Cantidad</label>
+            <input aria-label="Introduce la cantidad de papas grandes" type="number" id="cantidad_papasgrandes" name="cantidad_papasgrandes" min="0" value="">
+
+            <a href="burgers.html">
+            <button type="button">Comprar hamburguesas</button>
+            </a>
+            <a href="sodas.html">
+            <button type="button">Comprar bebidas</button>
+            </a>
+            <a href="/order.html">
+            <button type="button">Pagar los productos seleccionados</button>
+            </a>
+            
+        </fieldset>
+    </form>
 </body>
 </html>
