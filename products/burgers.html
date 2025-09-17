@@ -7,69 +7,61 @@
     <title>Arma tu pedido</title>
 </head>
 <body>
-        <!-- Navegación -->
-  <header role="banner">
-    <div class="name" aria-label = "Nuestro nombre">K.O. Burguers</div> 
-
-    <a href="/index.html" class="logo" aria-label="Ir a la página de inicio">
-      <img src="/img/logo_ko.png" alt="" role="presentation" class="logo_img">
-    </a>
-    
-    <nav role="navigation" aria-label="">
-      <ul class="nav_link">
-        <li>
-          <a class="contact" href="/contact.html" aria-label="Contáctanos">
-            <span aria-hidden="true">Contáctanos</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Navegación -->
+    <header role="banner">
+        <div class="name" aria-label="Nuestro nombre">K.O. Burgers</div> 
+        <a href="/index.html" class="logo" aria-label="Ir a la página de inicio">
+            <img src="/img/logo_ko.png" alt="Logo de K.O. Burgers" role="presentation" class="logo_img">
+        </a>
+        <nav role="navigation" aria-label="Navegación principal">
+            <ul class="nav_link">
+                <li>
+                    <a class="contact" href="/contact.html" aria-label="Contáctanos">
+                        <span aria-hidden="true">Contáctanos</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <h1>ARMA TU PEDIDO</h1>
 
-    <form id="formulario" action="#" method="post">
+    <form id="formulario" action="#" method="post" role="form">
         <fieldset>
             <legend>Selecciona las hamburguesas y cantidades</legend>
 
             <!-- Hamburguesa Bacon -->
-            <img aria-hidden="true" src="/img/bacon1.jpg" width="200">
-            <p > Bacon $115 </p>
-            <p > CARNE DE RES, EXTRA TOCINO CRUJIENTE, QUESO DERRETIDO, PAN BRIOCHE. </p>
-            <label aria-hidden="true" for="cantidad_bacon">Cantidad</label>
-            <input aria-label="Introduce la cantidad de hamburguesa Bacon" type="number" id="cantidad_bacon" name="cantidad_bacon" min="0" value="">
+            <img src="/img/bacon1.jpg" alt="Hamburguesa Bacon con carne de res, extra tocino crujiente, queso derretido, pan brioche" width="200">
+            <p>Bacon $115</p>
+            <p aria-hidden="true">CARNE DE RES, EXTRA TOCINO CRUJIENTE, QUESO DERRETIDO, PAN BRIOCHE.</p>
+            <label for="cantidad_bacon">Cantidad</label>
+            <input type="number" id="cantidad_bacon" name="cantidad_bacon" min="0" value="" aria-label="Introduce la cantidad de hamburguesa Bacon">
 
             <!-- Hamburguesa Cheese -->
-            <img aria-hidden="true" src="/img/cheese.jpg" width="200">
-            <p > Cheese $115 </p>
-            <p > CARNE DE RES, MEZCLA DE QUESOS CHEDAR DERRETIDOS, PAN BRIOCHE, LECHUGA. </p>
-            <label aria-hidden="true" for="cantidad_cheese">Cantidad</label>
-            <input aria-label="Introduce la cantidad de hamburguesa cheese" type="number" id="cantidad_cheese" name="cantidad_cheese" min="0" value="">
+            <img src="/img/cheese.jpg" alt="Hamburguesa Cheese con carne de res, mezcla de quesos cheddar derretidos, pan brioche, lechuga" width="200">
+            <p>Cheese $115</p>
+            <p aria-hidden="true">CARNE DE RES, MEZCLA DE QUESOS CHEDAR DERRETIDOS, PAN BRIOCHE, LECHUGA.</p>
+            <label for="cantidad_cheese">Cantidad</label>
+            <input type="number" id="cantidad_cheese" name="cantidad_cheese" min="0" value="" aria-label="Introduce la cantidad de hamburguesa Cheese">
 
             <!-- Hamburguesa Americana -->
-            <img aria-hidden="true" src="/img/americana.jpg" width="200">
-            <p > Americana $115 </p>
-            <p > CARNE DE RES, QUESO, PEPINILLOS, LECHUGA, TOMATE,  ADEREZO K.O, PAN BRIOCHE.  </p>
-            <label aria-hidden="true" for="cantidad_americana">Cantidad</label>
-            <input aria-label="Introduce la cantidad de hamburguesa Americana" type="number" id="cantidad_americana" name="cantidad_americana" min="0" value="">
+            <img src="/img/americana.jpg" alt="Hamburguesa Americana con carne de res, queso, pepinillos, lechuga, tomate, aderezo K.O, pan brioche" width="200">
+            <p>Americana $115</p>
+            <p aria-hidden="true">CARNE DE RES, QUESO, PEPINILLOS, LECHUGA, TOMATE, ADEREZO K.O, PAN BRIOCHE.</p>
+            <label for="cantidad_americana">Cantidad</label>
+            <input type="number" id="cantidad_americana" name="cantidad_americana" min="0" value="" aria-label="Introduce la cantidad de hamburguesa Americana">
 
             <!-- Hamburguesa UltraCheese -->
-            <img aria-hidden="true" src="/img/ultracheese.jpg" width="200">
-            <p > UltraCheese $165</p>
-            <p > DOBLE CARNE DE RES, EXTRA QUESO K.O., TROCITOS DE TOCINO, LECHUGA, PAN BRIOCHE. </p>
-            <label aria-hidden="true" for="cantidad_ultracheese">Cantidad</label>
-            <input aria-label="Introduce la cantidad de hamburguesa UltraCheese" type="number" id="cantidad_ultracheese" name="cantidad_ultracheese" min="0" value="">
+            <img src="/img/ultracheese.jpg" alt="Hamburguesa UltraCheese con doble carne de res, extra queso K.O., trocitos de tocino, lechuga, pan brioche" width="200">
+            <p>UltraCheese $165</p>
+            <p aria-hidden="true">DOBLE CARNE DE RES, EXTRA QUESO K.O., TROCITOS DE TOCINO, LECHUGA, PAN BRIOCHE.</p>
+            <label for="cantidad_ultracheese">Cantidad</label>
+            <input type="number" id="cantidad_ultracheese" name="cantidad_ultracheese" min="0" value="" aria-label="Introduce la cantidad de hamburguesa UltraCheese">
 
-            
-            <a href="desserts.html">
-            <button type="button">Comprar papas</button>
-            </a>
-            <a href="sodas.html ">
-            <button type="button">Comprar bebidas</button>
-            </a>
-            <a href="/order.html">
-            <button type="button">Pagar los productos seleccionados</button>
-            </a>
+            <!-- Botones de acción -->
+            <button type="button" aria-label="Comprar papas" onclick="window.location.href='desserts.html'">Comprar papas</button>
+            <button type="button" aria-label="Comprar bebidas" onclick="window.location.href='sodas.html'">Comprar bebidas</button>
+            <button type="button" aria-label="Pagar los productos seleccionados" onclick="window.location.href='/order.html'">Pagar los productos seleccionados</button>
         </fieldset>
     </form>
 </body>

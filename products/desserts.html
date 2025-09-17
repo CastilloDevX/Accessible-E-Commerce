@@ -7,59 +7,51 @@
     <title>Arma tu pedido</title>
 </head>
 <body>
-        <!-- Navegación -->
-  <header role="banner">
-    <div class="name" aria-label = "Nuestro nombre">K.O. Burguers</div> 
-
-    <a href="/index.html" class="logo" aria-label="Ir a la página de inicio">
-      <img src="/img/logo_ko.png" alt="" role="presentation" class="logo_img">
-    </a>
-    
-    <nav role="navigation" aria-label="">
-      <ul class="nav_link">
-        <li>
-          <a class="contact" href="/contact.html" aria-label="Contáctanos">
-            <span aria-hidden="true">Contáctanos</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Navegación -->
+    <header role="banner">
+        <div class="name" aria-label="Nuestro nombre">K.O. Burgers</div>
+        <a href="/index.html" class="logo" aria-label="Ir a la página de inicio">
+            <img src="/img/logo_ko.png" alt="Logo de K.O. Burgers" role="presentation" class="logo_img">
+        </a>
+        <nav role="navigation" aria-label="Navegación principal">
+            <ul class="nav_link">
+                <li>
+                    <a class="contact" href="/contact.html" aria-label="Contáctanos">
+                        <span aria-hidden="true">Contáctanos</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <h1>ARMA TU PEDIDO</h1>
 
-    <form id="formulario" action="#" method="post">
+    <form id="formulario" action="#" method="post" role="form">
         <fieldset>
-            <legend>Selecciona las hamburguesas y cantidades</legend>
+            <legend>Selecciona las papas y cantidades</legend>
 
             <!-- Papas chicas -->
-            <img aria-hidden="true" src="/img/papas.png" width="200">
-            <p > Papas chicas $25 </p>
-            <label aria-hidden="true" for="cantidad_papaschicas">Cantidad</label>
-            <input aria-label="Introduce la cantidad de papas chicas" type="number" id="cantidad_papaschicas" name="cantidad_papaschicas" min="0" value="">
+            <img src="/img/papas.png" alt="Papas chicas fritas" width="200">
+            <p>Papas chicas $25</p>
+            <label for="cantidad_papaschicas">Cantidad</label>
+            <input type="number" id="cantidad_papaschicas" name="cantidad_papaschicas" min="0" value="" aria-label="Introduce la cantidad de papas chicas">
 
             <!-- Papas medianas -->
-            <img aria-hidden="true" src="/img/papas.png" width="200">
-            <p > Papas medianas $45 </p>
-            <label aria-hidden="true" for="cantidad_papasmedianas">Cantidad</label>
-            <input aria-label="Introduce la cantidad de papas medianas" type="number" id="cantidad_papasmedianas" name="cantidad_papasmedianas" min="0" value="">
+            <img src="/img/papas.png" alt="Papas medianas fritas" width="200">
+            <p>Papas medianas $45</p>
+            <label for="cantidad_papasmedianas">Cantidad</label>
+            <input type="number" id="cantidad_papasmedianas" name="cantidad_papasmedianas" min="0" value="" aria-label="Introduce la cantidad de papas medianas">
 
             <!-- Papas grandes -->
-            <img aria-hidden="true" src="/img/papas.png" width="200">
-            <p > papas grandes $65 </p>
-            <label aria-hidden="true" for="cantidad_papasgrandes">Cantidad</label>
-            <input aria-label="Introduce la cantidad de papas grandes" type="number" id="cantidad_papasgrandes" name="cantidad_papasgrandes" min="0" value="">
+            <img src="/img/papas.png" alt="Papas grandes fritas" width="200">
+            <p>Papas grandes $65</p>
+            <label for="cantidad_papasgrandes">Cantidad</label>
+            <input type="number" id="cantidad_papasgrandes" name="cantidad_papasgrandes" min="0" value="" aria-label="Introduce la cantidad de papas grandes">
 
-            <a href="burgers.html">
-            <button type="button">Comprar hamburguesas</button>
-            </a>
-            <a href="sodas.html">
-            <button type="button">Comprar bebidas</button>
-            </a>
-            <a href="/order.html">
-            <button type="button">Pagar los productos seleccionados</button>
-            </a>
-            
+            <!-- Botones de acción -->
+            <button type="button" aria-label="Comprar hamburguesas" onclick="window.location.href='burgers.html'">Comprar hamburguesas</button>
+            <button type="button" aria-label="Comprar bebidas" onclick="window.location.href='sodas.html'">Comprar bebidas</button>
+            <button type="button" aria-label="Pagar los productos seleccionados" onclick="window.location.href='/order.html'">Pagar los productos seleccionados</button>
         </fieldset>
     </form>
 </body>
