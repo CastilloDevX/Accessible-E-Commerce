@@ -31,9 +31,9 @@
        
         header {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-
+           
             background-color: #000000;
             padding: 2px 0;
             margin-bottom: 20px;
@@ -44,8 +44,11 @@
 
         .logo_img {
             height: 100px;
-            margin-left: 40px;
+        
         }
+
+    
+          
 
         .contact{
             text-decoration: none;
@@ -119,6 +122,8 @@
             
             
         }
+
+        
 /* Reseteo de márgenes y paddings */
 * {
     margin: 0;
