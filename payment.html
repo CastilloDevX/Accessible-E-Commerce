@@ -28,26 +28,26 @@
         <legend id="form-title">Información de pago</legend>
 
         <label for="card-id">Número de tarjeta:</label>
-        <input type="number" name="card-id" id="card-id" aria-required="true">
+        <input required type="number" name="card-id" id="card-id" aria-required="true">
 
         <br>
         <label for="alias">Alias de tarjeta:</label>
-        <input type="text" name="alias" id="alias">
+        <input required type="text" name="alias" id="alias">
 
         <br>
         <label for="expiration-month">Mes de expiración:</label>
-        <input type="number" name="expiration-month" id="expiration-month" min="1" max="12" aria-required="true">
+        <input required type="number" name="expiration-month" id="expiration-month" min="1" max="12" aria-required="true">
 
         <br>
         <label for="expiration-year">Año de expiración:</label>
-        <input type="number" name="expiration-year" id="expiration-year" aria-required="true">
+        <input required type="number" name="expiration-year" id="expiration-year" aria-required="true">
 
         <br>
         <label for="verification-code">Código de verificación (CVV):</label>
-        <input type="number" name="verification-code" id="verification-code" min="100" max="999" aria-required="true">
+        <input required type="number" name="verification-code" id="verification-code" min="100" max="999" aria-required="true">
 
         <br>
-        <input type="checkbox" name="Terminos" id="Terminos" aria-required="true">
+        <input required type="checkbox" name="Terminos" id="Terminos" aria-required="true">
         <label for="Terminos">
           Acepto los <a href="terminos_condiciones.html">términos y condiciones</a>
         </label>
